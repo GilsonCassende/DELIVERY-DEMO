@@ -8,7 +8,7 @@
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "build:client": "vite build",
     "build:server": "esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist-server",
-    "build:deploy": "pnpm build:client && pnpm build:server && mkdir -p dist-server/public && cp -r dist/* dist-server/public/",
+    "build:deploy": "pnpm build:client && pnpm build:server && mkdir -p dist-server/public && cp -r dist/public/. dist-server/public/",
     "start:server": "NODE_ENV=production node dist-server/index.js",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",

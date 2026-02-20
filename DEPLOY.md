@@ -24,7 +24,7 @@ node dist-server/index.js   # testa backend localmente
 1. Push do repo para GitHub/GitLab.
 2. No Render: New → Web Service → conectar repositório.
 3. Configurar:
-   - Build Command: `pnpm install && pnpm build:deploy`
+   - Build Command: `pnpm install --frozen-lockfile && pnpm build:deploy`
    - Start Command: `node dist-server/index.js`
    - Environment: `NODE_ENV=production`
    - Selecionar a versão Node (ex.: 18+).
