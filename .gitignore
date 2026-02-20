@@ -3,3 +3,13 @@ dist/
 dist-server/
 .env
 .vscode/
+.DS_Store
+npm-debug.log*
+pnpm-debug.log*
+/.idea/
+coverage/
+coverage/*node_modules/
+dist/
+dist-server/
+.env
+.vscode/
