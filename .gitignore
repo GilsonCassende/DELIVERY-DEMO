@@ -13,3 +13,4 @@ dist/
 dist-server/
 .env
 .vscode/
+.env.exemple
