@@ -6,6 +6,10 @@ Este arquivo explica como publicar o frontend no Vercel e o backend no Render, u
 - `pnpm build:client` — build do frontend (Vite) gera `dist`
 - `pnpm build:server` — bundle do backend via `esbuild` gera `dist-server`
 - `pnpm start:server` — inicia o servidor a partir de `dist-server`
+ - `pnpm build:client` — build do frontend (Vite) gera `dist`
+ - `pnpm build:server` — bundle do backend via `esbuild` gera `dist-server`
+ - `pnpm build:deploy` — build combinado (client + server) e copia frontend para `dist-server/public`
+ - `pnpm start:server` — inicia o servidor a partir de `dist-server`
 
 ## 1) Teste local rápido
 ```bash
@@ -20,7 +24,7 @@ node dist-server/index.js   # testa backend localmente
 1. Push do repo para GitHub/GitLab.
 2. No Render: New → Web Service → conectar repositório.
 3. Configurar:
-   - Build Command: `pnpm install && pnpm build:server`
+   - Build Command: `pnpm install && pnpm build:deploy`
    - Start Command: `node dist-server/index.js`
    - Environment: `NODE_ENV=production`
    - Selecionar a versão Node (ex.: 18+).
