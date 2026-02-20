@@ -18,7 +18,7 @@ pnpm build:client    # gera /dist
 pnpm build:server    # gera /dist-server
 node dist-server/index.js   # testa backend localmente
 # para ver o frontend, use um servidor estático na pasta dist ou `pnpm preview`
-```
+```vsf
 
 ## 2) Backend no Render
 1. Push do repo para GitHub/GitLab.
